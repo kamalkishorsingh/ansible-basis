@@ -1,0 +1,16 @@
+---
+- name: Creates backup directory ...
+  file: path={{ backup_dir }} state=directory
+#  check_mode: yes
+#  when: ansible_distribution == 'centos'
+
+- name: Creates a file ...
+  file: path={{ path_name }} state=touch  # (empty file create)
+#  check_mode: yes
+
+- name: file with content
+  copy: src={{ src_path }} dest={{dest_path }}
+#  check_mode: yes
+
+- name: Restarting apapche
+  service: name={{ service_name }} state={{ sataus_name }} enabled=yes

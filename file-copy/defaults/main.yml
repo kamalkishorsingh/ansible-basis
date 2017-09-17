@@ -1,0 +1,10 @@
+---
+backup_dir: "/tmp/testbk"
+path_name: "/tmp/mett"
+src_path: "/etc/ansible/roles/file-copy/files/"
+dest_path: "/var/www/html"
+service_name: "apache2"
+sataus_name: "started"
+backup1_dir: "/tmp/kamal"
+
+# defaults file for file-copy

@@ -1,0 +1,6 @@
+---
+- name: Started apapche
+  service: name=apache2 state=started
+#  service: name={{ service_name }} state={{ sataus_name }} enabled=yes
+# handlers file for file-copy
+
